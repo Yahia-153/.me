@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="images/logo avatar.png"> 
+    <title>Yahia Mohamed</title>
+</head>
+<body>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo avatar.png" alt="logo">
+        </div>
+        <div class="links" id="links">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="bar">
+                <input type="text" placeholder="Search...">
+            <button>
+                <lord-icon
+                src="https://cdn.lordicon.com/fkdzyfle.json"
+                trigger="loop-on-hover"
+                colors="primary:#8121d0"
+                delay="1000">
+                </lord-icon>
+            </button>
+        </div>
+        </div>
+        <div class="burger">
+            <label class="hamburger" onclick="menu()">
+                <input type="checkbox" id="burger" onclick="">
+                <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <script>
+            window.addEventListener("scroll", function() {
+                let nav = document.getElementById("header");
+                nav.classList.toggle("sticky" , window.scrollY > 500 ) ;
+            })
+            function menu(){
+                let menu = document.getElementById("menu");
+                if(document.getElementById("burger").checked){
+                    menu.style.top = "100px";
+                    
+                }else{
+                    menu.style.top = "-350px";
+
+                }
+                
+            }
+        </script>
+    </header>
+    
+
+    <section id="home">
+        <div class="content">
+            <div class="text">
+                <div class="head">
+                    <h3>i'm<div class="name">yahia mohamed</div></h4>
+                </div>
+                <div class="job">
+                    <h4>front-end developer</h4>
+                </div>
+                <div class="cv">
+                    <button class="d-btn">
+                        download cv
+                    </button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/my photo.png" alt="yahia">
+            </div>
+        </div>
+    </section>
+    <div class="y-p">
+        <div class="content">
+            <div class="n-t">
+                <div class="num"><h1>1</h1></div>
+                <div class="text"><h4>years of experiance</h4></div>
+            </div>
+            <div class="n-t">
+                <div class="num"><h1>6</h1></div>
+                <div class="text"><h4>completed projects</h4></div>
+            </div>
+        </div>
+        <div class="space"></div>
+        
+
+    </div>
+    <section id="about">
+        <ion-icon name="code-slash-outline" class="slash"></ion-icon>
+        <div class="content">
+            <div class="img">
+                <img src="images/about-img.jpg" alt="">
+            </div>
+            <div class="r">
+                <div class=""></div>
+                <div class="head">
+                    <h3>about me:</h3>
+                </div>
+                <div class="text">
+                    <p>
+                        I'm Yahia Mohamed, a dedicated web developer blending creativity with functionality. I thrive on challenges, continuously learning to innovate. Beyond coding, I find inspiration in photography, fueling my creativity.                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <ion-icon name="ellipsis-vertical-outline" class="dot"></ion-icon> 
+    </section>
+    <section id="skills">
+        <div class="head-s">
+            <h1>skills</h1><span class="star"><ion-icon name="star"></ion-icon></span>
+        </div>
+        <div class="body">
+<!--             <span class="icon">
+                <ion-icon name="apps-outline"></ion-icon>
+            </span>-->
+            <div class="skill " data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/html-5-svgrepo-com.svg" alt="html">
+                    </div>
+                    <div class="name">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls html">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl on n3"></span>
+                            <span class="lvl on n4"></span>
+                            <span class="lvl on n5"></span>
+                            <span class="lvl on n6"></span>
+                            <span class="lvl on n7"></span>
+                            <span class="lvl on n8"></span>
+                            <span class="lvl on n9"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>90</p>
+                </div>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/css-3-svgrepo-com.svg" alt="css">
+                    </div>
+                    <div class="name">
+                        <h2>CSS</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls css">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl on n3"></span>
+                            <span class="lvl on n4"></span>
+                            <span class="lvl on n5"></span>
+                            <span class="lvl on n6"></span>
+                            <span class="lvl on n7"></span>
+                            <span class="lvl on n8"></span>
+                            <span class="lvl on n9"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>90</p>
+                </div>
+            </div>
+            <div class="skill " data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/js-svgrepo-com.svg" alt="js">
+                    </div>
+                    <div class="name">
+                        <h2>JavaScript</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls js">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl on n3"></span>
+                            <span class="lvl on n4"></span>
+                            <span class="lvl on n5"></span>
+                            <span class="lvl on n6"></span>
+                            <span class="lvl on n7"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>70</p>
+                </div>
+            </div>
+            <div class="skill " data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/php-svgrepo-com.svg" alt="php">
+                    </div>
+                    <div class="name">
+                        <h2>php</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls php">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl on n3"></span>
+                            <span class="lvl on n4"></span>
+                            <span class="lvl on n5"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>50</p>
+                </div>
+            </div>
+            <div class="skill " data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/photoshop-svgrepo-com.svg" alt="ps">
+                    </div>
+                    <div class="name">
+                        <h2>Photoshop</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls ps">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl on n3"></span>
+                            <span class="lvl on n4"></span>
+                            <span class="lvl on n5"></span>
+                            <span class="lvl on n6"></span>
+                            <span class="lvl on n7"></span>
+                            <span class="lvl on n8"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>80</p>
+                </div>
+            </div>
+            <div class="skill " data-aos="zoom-in">
+                <div class="top">
+                    <div class="logo">
+                        <img src="svg/figma-svgrepo-com.svg" alt="figma">
+                    </div>
+                    <div class="name">
+                        <h2>Figma</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="battery ">
+                        <div class="lvls figma">
+                            <span class="lvl on n1"></span>
+                            <span class="lvl on n2"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                            <span class="lvl off"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>20</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="projects">
+        <div class="head-s">
+            <h1>projects</h1><span class="star"><ion-icon name="star"></ion-icon></span>
+        </div>
+        <div class="body">
+            <section class="content">
+                <div class="project">
+                    <div class="card">
+                        <img src="images/projects/earthcarekids project.png">
+                        <div class="card__content">
+                            <p class="card__title">EarthCareKids </p>
+                            <p class="card__description">EarthCareKids is an interactive web platform teaching children environmental conservation through activities and resources, fostering eco-awareness from a young age.</p>
+                            <a href="https://yahia-153.github.io/EarthCareKids/" title="Preview"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="project">
+                    <div class="card">
+                        <img src="images/projects/to do list .png">
+                        <div class="card__content">
+                            <p class="card__title">ToDo List</p>
+                            <p class="card__description">
+                                The "To-Do List" web app allows users to add, complete, and clear tasks, featuring a clean and user-friendly interface.</p>
+                            <a href="https://yahia-153.github.io/To-Do-List/" title="Preview"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="project">
+                    <div class="card">
+                        <img src="images/projects/timer.png" alt="">
+                        <div class="card__content">
+                            <p class="card__title">Timer</p>
+                            <p class="card__description">
+                                The "Timer" web app offers a straightforward interface to start, pause, and reset a timer, displaying hours, minutes, seconds, and milliseconds </p>
+                            <a href="https://yahia-153.github.io/Timer/" title="Preview"><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                      </div>
+                      
+                </div>
+                
+                
+            </section>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="head-s">
+            <h1>contact</h1><span class="star"><ion-icon name="star"></ion-icon></span>
+        </div>
+        <div class="body">
+            <form action="https://formsubmit.co/549d2eed5ce3dc7855d591d14c0a0c0b" method="POST">                
+                <input type="text" placeholder="Name" name="Name" required>
+                <input type="email" placeholder="Email" name="E-Mail" required>
+                <textarea placeholder="Message" name="Massage" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+<!--                 <input type="hidden" name="_next" value="thanks.html">
+ -->                <input type="hidden" name="_subject" value="New Massage!">
+                <div class="btn">
+                    <button type="submit">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                        </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <a href=""><button><ion-icon name="logo-github"></ion-icon></button></a>
+            <a href=""><button><ion-icon name="logo-facebook"></ion-icon></button></a>
+            <a href=""><button><ion-icon name="logo-instagram"></ion-icon></button></a>
+            <a href=""><button><ion-icon name="logo-twitter"></ion-icon></button></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
