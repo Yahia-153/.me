@@ -16,11 +16,11 @@
 <body>
     <div class="menu" id="menu">
         <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#home" onclick="Cmenu()">home</a></li>
+            <li><a href="#about" onclick="Cmenu()">about</a></li>
+            <li><a href="#skills" onclick="Cmenu()">skills</a></li>
+            <li><a href="#projects" onclick="Cmenu()">projects</a></li>
+            <li><a href="#contact" onclick="Cmenu()">contact</a></li>
         </ul>
     </div>
     <header id="header">
@@ -73,6 +73,11 @@
 
                 }
                 
+            }
+            function Cmenu(){
+                let menu = document.getElementById("menu");
+                menu.style.top = "-350px";
+                document.getElementById("burger").checked=false;
             }
         </script>
     </header>
