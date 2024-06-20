@@ -252,7 +252,7 @@ header{
                     margin: 0 0 0 10px;
                     transition: all .3s ease-in-out;
                     font-size: 30px;
-                    animation: typing 7s 2s both steps(15) infinite;
+                    animation: typing 7s 2s both linear infinite;
                     overflow: hidden;
                     white-space: nowrap;
                     border-right: solid var(--text-color);
