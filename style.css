@@ -253,7 +253,7 @@ header{
                     transition: all .3s ease-in-out;
                     font-size: 30px;
                     animation: typing 7s 2s both linear infinite;
-                    width: 400px;
+                    width: 350px;
                     overflow: hidden;
                     white-space: nowrap;
                     border-right: solid var(--text-color);
@@ -904,7 +904,7 @@ footer{
         width: 0;
     }
     45%{
-        width: 400px;
+        width: 350px;
     }
     90%{
         width: 0;
