@@ -729,6 +729,9 @@ header{
             .btn{
                 display: flex;
                 justify-content: center;
+                a{
+                    text-decoration: none;
+                }
                 button {
                     font-family: inherit;
                     font-size: 20px;
