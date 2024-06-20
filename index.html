@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,7 +16,7 @@
 <body>
     <div class="menu" id="menu">
         <ul>
-            <li><a href="#home" onclick="Cmenu()">home</a></li>
+            <li><a href="#home" onclick="Cmenu()" >home</a></li>
             <li><a href="#about" onclick="Cmenu()">about</a></li>
             <li><a href="#skills" onclick="Cmenu()">skills</a></li>
             <li><a href="#projects" onclick="Cmenu()">projects</a></li>
@@ -375,31 +375,33 @@
         </div>
         <div class="body">
             <form action="https://formsubmit.co/549d2eed5ce3dc7855d591d14c0a0c0b" method="POST">                
+                <input type="hidden" name="_next" value="https://yahia-153.github.io/.me/thanks.html">
                 <input type="text" placeholder="Name" name="Name" required>
                 <input type="email" placeholder="Email" name="E-Mail" required>
                 <textarea placeholder="Message" name="Massage" required></textarea>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="https://yahia-153.github.io/.me/thanks.html">
                 <input type="hidden" name="_subject" value="New Massage!">
                 <div class="btn">
-                    <button type="submit">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                height="24">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path
-                                fill="currentColor"
-                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                            </svg>
+                    <a href="thanks.html">
+                        <button type="submit">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                    fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                                </div>
                             </div>
-                        </div>
-                        <span>Send</span>
+                            <span>Send</span>
                         </button>
+                    </a>
                 </div>
             </form>
         </div>

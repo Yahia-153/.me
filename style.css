@@ -11,12 +11,6 @@ html{
     scrollbar-color: transparent transparent; 
     scroll-padding-top: 100px;
 }
-.nova-mono-regular {
-    font-family: "Nova Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
 :root{
     --primary-color: #8121d0;
     --secondary-color:#331c52;
@@ -24,7 +18,7 @@ html{
     --bg-color:#e1ebed;
     --2bg-color:#dccfed;
     --w-t-color:#ffff;
-    --main-font: "Nova Mono", monospace;
+    --main-font: "Lexend", sans-serif;
 }
 
 body{
@@ -246,22 +240,24 @@ header{
                 margin: 0 auto;
             }
             .head{
-                font-size: 22px;
+                font-size: 20px;
                 text-transform: uppercase;
                 h3{
                     display:flex ;
                     align-items: end;
                 }
                 .name{
+                    letter-spacing: 2px;
                     color: var(--text-color);
-                    margin: 0 10px;
+                    margin: 0 0 0 10px;
                     transition: all .3s ease-in-out;
-                    font-size: 35px;
-                    animation: typing 6s 2s both steps(13) infinite;
+                    font-size: 30px;
+                    animation: typing 7s 2s both linear infinite;
+                    width: 400px;
                     overflow: hidden;
                     white-space: nowrap;
-                    width: 255px;
                     border-right: solid var(--text-color);
+                    
                 }
             }
             .job{
@@ -907,8 +903,11 @@ footer{
     0%,100%{
         width: 0;
     }
-    50%{
-        width: 255px;
+    45%{
+        width: 400px;
+    }
+    90%{
+        width: 0;
     }
 }
 @keyframes btn-glow {
